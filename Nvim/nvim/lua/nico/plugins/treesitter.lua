@@ -31,6 +31,7 @@ return {
 				"git_rebase",
 				"gitattributes",
 				"go",
+				"rust",
 			},
 
 			-- Install parsers synchronously (only applied to `ensure_installed`)

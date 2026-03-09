@@ -4,6 +4,7 @@ alias pacrem="sudo pacman -Rns"
 alias pacreps="pacman -Ss"
 alias pacmir="sudo pacman -Syy"
 alias pac="sudo pacman"
+alias pacis="sudo pacman -Sy"
 
 # Pacman aliases
 alias parin="paru -S"
@@ -43,3 +44,4 @@ export ZSH_PLUGINS_ALIAS_TIPS_EXCLUDES="vnim nvm nvi dc sduo sodu"
 
 # Other aliases
 alias cd="z"
+alias gdb="gdb -q"

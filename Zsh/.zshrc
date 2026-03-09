@@ -47,5 +47,18 @@ bindkey "^[[3~" delete-char
 export STARSHIP_CONFIG=~/.config/zsh/starship.toml
 eval "$(starship init zsh)"
 
+# autoload -Uz vcs_info
+# zstyle ":vcs_info:*" enable git
+# zstyle ":vcs_info:git*" formats "  %b %m %u %c (%a)"
+# zstyle ":vcs_info:*" check-for-changes true
+# zstyle ":vcs_info:*" stagedstr " +"
+# zstyle ":vcs_info:*" unstagedstr " !"
+
+# precmd() {
+	# vcs_info
+	# print -P "%F{#a3aed2}░▒▓%F{}%K{#a3aed2} %~%F{#a3aed2}%K{#769ff0}%F{#FFFFFF}${vcs_info_msg_0_}%F{#769ff0}%K{}"
+	# PROMPT="❯ "
+# }
+
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /home/nico/go/bin/gocomplete go
